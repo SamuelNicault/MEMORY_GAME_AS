@@ -21,6 +21,7 @@ class SceneJeu extends Phaser.Scene {
     this.load.image('reineR2','assets/cardHeartsQ.png');
     this.load.image('carte','assets/cardBack_green5.png');
     this.load.image('back','assets/back.jpg');
+    this.load.image('victoire','assets/back.jpg');
   }//End preload
 
 
@@ -76,6 +77,7 @@ class SceneJeu extends Phaser.Scene {
     })
 
     function passReac(){
+      this.button.valeur = 0;
       this.pass.setAlpha(1);
       this.button.setAlpha(0);
     }
@@ -90,6 +92,7 @@ class SceneJeu extends Phaser.Scene {
     })
 
     function passReac2(){
+      this.button2.valeur = 0;
       this.pass2.setAlpha(1);
       this.button2.setAlpha(0);
     }
@@ -104,6 +107,7 @@ class SceneJeu extends Phaser.Scene {
     })
 
     function passReac3(){
+      this.button3.valeur = 0;
       this.pass3.setAlpha(1);
       this.button3.setAlpha(0);
     }
@@ -118,6 +122,7 @@ class SceneJeu extends Phaser.Scene {
     })
 
    function passReac4(){
+     this.button4.valeur = 0;
       this.pass4.setAlpha(1);
       this.button4.setAlpha(0);
     }
@@ -132,6 +137,7 @@ class SceneJeu extends Phaser.Scene {
     })
 
     function passReac5(){
+      this.button5.valeur = 0;
       this.pass5.setAlpha(1);
       this.button5.setAlpha(0);
     }
@@ -145,10 +151,11 @@ class SceneJeu extends Phaser.Scene {
       }
     })
 
-    function passReac(){
+    function passReac6(){
+      this.button6.valeur = 0;
       this.pass6.setAlpha(1);
       this.button6.setAlpha(0);
-    });
+    }
 
 
 // Carte rouge
@@ -251,9 +258,12 @@ class SceneJeu extends Phaser.Scene {
       this.button12.setAlpha(0);
     });
 
+
+
   }//End create
 
   update() {
+
   }//End update
 
 }//End prog
