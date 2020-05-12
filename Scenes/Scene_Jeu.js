@@ -18,7 +18,7 @@ class SceneJeu extends Phaser.Scene {
     this.load.image('roiR','assets/cardDiamondsK.png');
     this.load.image('roiR2','assets/cardHeartsK.png');
     this.load.image('reineR','assets/cardDiamondsQ.png');
-    this.load.image('reineN2','assets/cardHeartsQ.png');
+    this.load.image('reineR2','assets/cardHeartsQ.png');
     this.load.image('carte','assets/cardBack_green5.png');
     this.load.image('back','assets/back.jpg');
   }//End preload
@@ -119,6 +119,118 @@ class SceneJeu extends Phaser.Scene {
       this.pass6.setAlpha(1);
       this.button6.setAlpha(0);
     });
+
+
+// Carte rouge
+
+    this.button7=this.add.sprite(70, 400,'valetR'); //à remplacer par la mniature de votre image
+    this.button7.setAlpha(0);
+    this.button8=this.add.sprite(210, 400,'valetR2'); //à remplacer par la mniature de votre image
+    this.button8.setAlpha(0);
+    this.button9=this.add.sprite(340, 400,'reineR2'); //à remplacer par la mniature de votre image
+    this.button9.setAlpha(0);
+    this.button10=this.add.sprite(470, 400,'roiR'); //à remplacer par la mniature de votre image
+    this.button10.setAlpha(0);
+    this.button11=this.add.sprite(600, 400,'reineR2'); //à remplacer par la mniature de votre image
+    this.button11.setAlpha(0);
+    this.button12=this.add.sprite(730, 400,'roiR2'); //à remplacer par la mniature de votre image
+    this.button12.setAlpha(0);
+
+	this.pass7=this.add.sprite(70, 400,'carte');
+    this.pass8=this.add.sprite(210, 400,'carte');
+    this.pass9=this.add.sprite(340, 400,'carte');
+    this.pass10=this.add.sprite(470, 400,'carte');
+    this.pass11=this.add.sprite(600, 400,'carte');
+    this.pass12=this.add.sprite(730, 400,'carte');
+    this.pass7.setInteractive();
+    this.pass7.alwaysEnabled = true;
+    this.pass8.setInteractive();
+    this.pass8.alwaysEnabled = true;
+    this.pass9.setInteractive();
+    this.pass9.alwaysEnabled = true;
+    this.pass10.setInteractive();
+    this.pass10.alwaysEnabled = true;
+    this.pass11.setInteractive();
+    this.pass11.alwaysEnabled = true;
+    this.pass12.setInteractive();
+    this.pass12.alwaysEnabled = true;
+
+
+    this.pass7.on('pointerdown',() => {
+      this.button7.setAlpha(1);
+      this.pass7.setAlpha(0);
+    })
+
+    this.pass7.on('pointerup',() => {
+      this.pass7.setAlpha(1);
+      this.button7.setAlpha(0);
+    });
+
+    this.pass8.on('pointerdown',() => {
+      this.button8.setAlpha(1);
+      this.pass8.setAlpha(0);
+    })
+
+    this.pass8.on('pointerup',() => {
+      this.pass8.setAlpha(1);
+      this.button8.setAlpha(0);
+    });
+
+    this.pass9.on('pointerdown',() => {
+      this.button9.setAlpha(1);
+      this.pass9.setAlpha(0);
+    })
+
+    this.pass9.on('pointerup',() => {
+      this.pass9.setAlpha(1);
+      this.button9.setAlpha(0);
+    });
+
+    this.pass10.on('pointerdown',() => {
+      this.button10.setAlpha(1);
+      this.pass10.setAlpha(0);
+    })
+
+    this.pass10.on('pointerup',() => {
+      this.pass10.setAlpha(1);
+      this.button10.setAlpha(0);
+    });
+
+    this.pass11.on('pointerdown',() => {
+      this.button11.setAlpha(1);
+      this.pass11.setAlpha(0);
+    })
+
+    this.pass11.on('pointerup',() => {
+      this.pass11.setAlpha(1);
+      this.button11.setAlpha(0);
+    });
+
+    this.pass12.on('pointerdown',() => {
+      this.button12.setAlpha(1);
+      this.pass12.setAlpha(0);
+    })
+
+    this.pass12.on('pointerup',() => {
+      this.pass12.setAlpha(1);
+      this.button12.setAlpha(0);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }//End create
 
   update() {
