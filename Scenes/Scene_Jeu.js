@@ -35,12 +35,12 @@ class SceneJeu extends Phaser.Scene {
     this.pass.alwaysEnabled = true;
 
 
-    this.pass.on('pointerover',() => {
+    this.pass.on('pointerdown',() => {
       this.button.setAlpha(1);
       this.pass.setAlpha(0);
     })
 
-    this.pass.on('pointerout',() => {
+    this.pass.on('pointerup',() => {
       this.pass.setAlpha(1);
       this.button.setAlpha(0);
     });
