@@ -23,6 +23,7 @@ class SceneJeu extends Phaser.Scene {
     this.load.image('back','assets/back.jpg');
   }//End preload
 
+
   create(){
     this.add.image(0,0,'back').setOrigin(0,0);
 
