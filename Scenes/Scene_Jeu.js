@@ -28,25 +28,25 @@ class SceneJeu extends Phaser.Scene {
 
     this.add.image(0,0,'back').setOrigin(0,0);
 
-    this.button=this.add.sprite(70, 100,'valetN'); //à remplacer par la mniature de votre image
+    this.button=this.add.sprite(70, 200,'valetN'); //à remplacer par la mniature de votre image
     this.button.setAlpha(0);
-    this.button2=this.add.sprite(210, 100,'valetN2'); //à remplacer par la mniature de votre image
+    this.button2=this.add.sprite(210, 200,'valetN2'); //à remplacer par la mniature de votre image
     this.button2.setAlpha(0);
-    this.button3=this.add.sprite(340, 100,'reineN2'); //à remplacer par la mniature de votre image
+    this.button3=this.add.sprite(340, 200,'reineN2'); //à remplacer par la mniature de votre image
     this.button3.setAlpha(0);
-    this.button4=this.add.sprite(470, 100,'roiN'); //à remplacer par la mniature de votre image
+    this.button4=this.add.sprite(470, 200,'roiN'); //à remplacer par la mniature de votre image
     this.button4.setAlpha(0);
-    this.button5=this.add.sprite(600, 100,'reineR'); //à remplacer par la mniature de votre image
+    this.button5=this.add.sprite(600, 200,'reineR'); //à remplacer par la mniature de votre image
     this.button5.setAlpha(0);
-    this.button6=this.add.sprite(730, 100,'roiN2'); //à remplacer par la mniature de votre image
+    this.button6=this.add.sprite(730, 200,'roiN2'); //à remplacer par la mniature de votre image
     this.button6.setAlpha(0);
 
-    this.pass=this.add.sprite(70, 100,'carte');
-    this.pass2=this.add.sprite(210, 100,'carte');
-    this.pass3=this.add.sprite(340, 100,'carte');
-    this.pass4=this.add.sprite(470, 100,'carte');
-    this.pass5=this.add.sprite(600, 100,'carte');
-    this.pass6=this.add.sprite(730, 100,'carte');
+    this.pass=this.add.sprite(70, 200,'carte');
+    this.pass2=this.add.sprite(210, 200,'carte');
+    this.pass3=this.add.sprite(340, 200,'carte');
+    this.pass4=this.add.sprite(470, 200,'carte');
+    this.pass5=this.add.sprite(600, 200,'carte');
+    this.pass6=this.add.sprite(730, 200,'carte');
     this.pass.setInteractive();
     this.pass.alwaysEnabled = true;
     this.pass2.setInteractive();
