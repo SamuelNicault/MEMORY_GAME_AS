@@ -145,10 +145,10 @@ class SceneJeu extends Phaser.Scene {
       }
     })
 
-    function passReac(){
+    function passReac6(){
       this.pass6.setAlpha(1);
       this.button6.setAlpha(0);
-    });
+    }
 
 
 // Carte rouge
