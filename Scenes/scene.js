@@ -11,7 +11,7 @@ var config = {
 		}
 	},
 
-	scene: [Variables, Scene2, Scene3, Scene4, Scene5, Scene6, Scene7]
+	scene: [Variables, Scene7]
 
 };
 
