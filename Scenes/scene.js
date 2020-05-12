@@ -11,7 +11,7 @@ var config = {
 		}
 	},
 
-	scene: [Variables, Scene7]
+	scene: [Variables, SceneJeu]
 
 };
 
