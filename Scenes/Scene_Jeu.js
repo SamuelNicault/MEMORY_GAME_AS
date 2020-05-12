@@ -36,7 +36,7 @@ class SceneJeu extends Phaser.Scene {
     this.button3.setAlpha(0);
     this.button4=this.add.sprite(470, 200,'roiN'); //à remplacer par la mniature de votre image
     this.button4.setAlpha(0);
-    this.button5=this.add.sprite(600, 200,'reineR'); //à remplacer par la mniature de votre image
+    this.button5=this.add.sprite(600, 200,'reineN2'); //à remplacer par la mniature de votre image
     this.button5.setAlpha(0);
     this.button6=this.add.sprite(730, 200,'roiN2'); //à remplacer par la mniature de votre image
     this.button6.setAlpha(0);
