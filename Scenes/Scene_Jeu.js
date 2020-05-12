@@ -167,11 +167,7 @@ class SceneJeu extends Phaser.Scene {
     this.button12.setAlpha(0);
 
 
-
-
-
-
-	this.pass7=this.add.sprite(70, 400,'carte');
+	  this.pass7=this.add.sprite(70, 400,'carte');
     this.pass8=this.add.sprite(210, 400,'carte');
     this.pass9=this.add.sprite(340, 400,'carte');
     this.pass10=this.add.sprite(470, 400,'carte');
@@ -190,66 +186,93 @@ class SceneJeu extends Phaser.Scene {
     this.pass12.setInteractive();
     this.pass12.alwaysEnabled = true;
 
-
     this.pass7.on('pointerdown',() => {
       this.button7.setAlpha(1);
+      this.button7.valeur==1;
       this.pass7.setAlpha(0);
+      if(this.button8.valeur==0){
+        this.timedEvent = this.time.delayedCall(5000, passReac7, [], this);
+      }
     })
 
-    this.pass7.on('pointerup',() => {
-      this.pass7.setAlpha(1);
-      this.button7.setAlpha(0);
-    });
+    function passReac7(){
+      this.pass.setAlpha(1);
+      this.button.setAlpha(0);
+    }
 
     this.pass8.on('pointerdown',() => {
+      this.button8.valeur = 1;
       this.button8.setAlpha(1);
       this.pass8.setAlpha(0);
+      if(this.button7.valeur==0){
+        this.timedEvent = this.time.delayedCall(5000, passReac8, [], this);
+      }
     })
 
-    this.pass8.on('pointerup',() => {
+    function passReac8(){
       this.pass8.setAlpha(1);
       this.button8.setAlpha(0);
-    });
+    }
 
     this.pass9.on('pointerdown',() => {
+      this.button9.valeur = 1;
       this.button9.setAlpha(1);
       this.pass9.setAlpha(0);
+      if(this.button11.valeur==0){
+        this.timedEvent = this.time.delayedCall(5000, passReac9, [], this);
+      }
     })
 
-    this.pass9.on('pointerup',() => {
+    function passReac9(){
       this.pass9.setAlpha(1);
       this.button9.setAlpha(0);
-    });
+    }
 
     this.pass10.on('pointerdown',() => {
+      this.button10.valeur = 1;
       this.button10.setAlpha(1);
       this.pass10.setAlpha(0);
+      if(this.button12.valeur==0){
+        this.timedEvent = this.time.delayedCall(5000, passReac10, [], this);
+      }
     })
 
-    this.pass10.on('pointerup',() => {
+   function passReac10(){
       this.pass10.setAlpha(1);
       this.button10.setAlpha(0);
-    });
+    }
 
     this.pass11.on('pointerdown',() => {
+      this.button11.valeur = 1;
       this.button11.setAlpha(1);
       this.pass11.setAlpha(0);
+      if(this.button9.valeur==0){
+        this.timedEvent = this.time.delayedCall(5000, passReac11, [], this);
+      }
     })
 
-    this.pass11.on('pointerup',() => {
+    function passReac11(){
       this.pass11.setAlpha(1);
       this.button11.setAlpha(0);
-    });
+    }
 
     this.pass12.on('pointerdown',() => {
+      this.button12.valeur = 1;
       this.button12.setAlpha(1);
       this.pass12.setAlpha(0);
+      if(this.button10.valeur==0){
+        this.timedEvent = this.time.delayedCall(5000, passReac12, [], this);
+      }
     })
 
-    this.pass12.on('pointerup',() => {
+    function passReac12(){
       this.pass12.setAlpha(1);
       this.button12.setAlpha(0);
-    });
+    }
+
+
+
+
 
   }//End create
 
