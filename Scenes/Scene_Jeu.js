@@ -19,8 +19,13 @@ class SceneJeu extends Phaser.Scene {
     this.load.image('roiR2','assets/cardHeartsK.png');
     this.load.image('reineR','assets/cardDiamondsQ.png');
     this.load.image('reineN2','assets/cardHeartsQ.png');
+
+
+  }
+
     this.load.image('back','assets/back.png');
   }//End preload
+
 
   create(){
   }//End create
